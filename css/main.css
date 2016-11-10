@@ -1,0 +1,80 @@
+body{
+	background-image:url(../images/bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#ebebeb;
+	}
+	.tabelbg{
+		background-image:url(../images/textbg.jpg);
+		background-position:center top;
+		background-repeat:repeat-y;}
+			.tabelbg1{
+		background-image:url(../images/textbg1.jpg);
+		background-position:center bottom;
+		background-repeat:no-repeat;}
+	.leftbg{
+		background-image:url(../images/left_doun.jpg);
+		background-position:center top;
+		background-repeat:repeat-y;}
+.textheding{
+	font-family:"Myriad Pro", Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	color:#e52805;
+	font-weight:bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height:25px;
+}
+.smalltext{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:normal;
+	text-align:justify;
+	text-decoration: none;
+	line-height:16px;
+}
+.smalltext1 a{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#e52805;
+	font-weight:normal;
+	text-decoration: none;
+	line-height:16px;
+}
+.smalltext1 a:hover{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:normal;
+	text-decoration: none;
+	line-height:16px;
+}
+.smalltextf {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:normal;
+	text-decoration: none;
+	line-height:16px;
+}
+.smalltextf a{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:normal;
+	text-decoration: none;
+	line-height:16px;
+}
+.smalltextf a:hover{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#e52805;
+	font-weight:normal;
+	text-decoration: none;
+	line-height:16px;
+}

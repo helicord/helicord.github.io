@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+<title>Helicord : Automotive Synchro-drive Timing Belts</title>
+<link href="css/main1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="js/flexdropdown.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/flexdropdown.js">
+
+/***********************************************
+* Flex Level Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+<script type="text/javascript" src="flexdropdowncontents.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language=javascript>
+function ltrim ( s ){
+  return s.replace( /^\s*/, "" );
+}
+
+function validate()
+{    
+    var name =  document.getElementById("txtName");
+    var email =  document.getElementById("txtEmail");
+    var message =  document.getElementById("txtComments");
+   
+    if (ltrim(name.value) == "")
+    {
+        alert("Please enter your Name");
+        name.value="";
+        name.focus();
+        return false;
+    }
+    
+    if (ltrim(email.value) == "")
+    {
+        alert("Please enter your E-mail");
+        email.value="";
+        email.focus();
+        return false;
+    }
+    var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(!email.value.match(emailExp))
+	{		
+		alert("Please enter valid E-mail");
+		email.focus();
+		return false;
+	}
+	
+    if (ltrim(message.value) == "")
+    {
+        alert("Please enter your Comments");
+        message.value="";
+        message.focus();
+        return false;
+    }
+}
+</script>
+
+</head>
+
+<body onload="MM_preloadImages('images/home_over.jpg','images/profiel_over.jpg','images/products_over.jpg','images/enquary_over.jpg','images/qualityenq_over.jpg','images/contact_over.jpg')">
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="1000" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="127" align="left" valign="top"><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="127" height="141"  align="left">
+          <param name="movie" value="flash/logo.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="transparent" />
+          <param name="swfversion" value="6.0.65.0" />
+          <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="flash/logo.swf" width="127" height="141">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="transparent" />
+            <param name="swfversion" value="6.0.65.0" />
+            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+            <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+            <div>
+              <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+            </div> </object></object></td>
+        <td width="873" align="left" valign="top"><table width="873" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="873" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="570" height="91" align="left" valign="middle"><a href="index.htm"><img src="images/logo1.jpg" alt="logo" width="570" height="55" border="0" /></a></td>
+                <td width="303" align="right" valign="top"><img src="images/top1.jpg" alt="button" width="177" height="27" border="0" usemap="#Map" /></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td align="right"><table width="650" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" valign="top"><a href="index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/home_over.jpg',1)"><img src="images/home.jpg" name="Image4" width="95" height="38" border="0"  alt="home" id="Image4" /></a></td>
+                <td align="right" valign="top"><a href="profile.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/profiel_over.jpg',1)"><img src="images/profiel.jpg" alt="profile" name="Image6" width="111" height="38" border="0" id="Image6" /></a></td>
+                <td align="right" valign="top"><a href="automotive.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','images/products_over.jpg',1)" id="link1"><img src="images/products.jpg" alt="products" name="Image7" width="109" height="38" border="0" id="Image7" /></a></td>
+                <td align="right" valign="top"><a href="enquiry.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/enquary_over.jpg',1)"><img src="images/enquary_over.jpg" alt="enquiry" name="Image8" width="110" height="38" border="0" id="Image8" /></a></td>
+                <td align="right" valign="top"><a href="qualitypolicy.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/qualityenq_over.jpg',1)"><img src="images/qualityenq.jpg" alt="qualitypolicy" name="Image9" width="138" height="38" border="0" id="Image9" /></a></td>
+                <td align="right" valign="top"><a href="contact.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','images/contact_over.jpg',1)"><img src="images/contact.jpg" alt="contactus" name="Image10" width="124" height="38" border="0" id="Image10" /></a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="140" align="center" valign="middle"><img src="images/enquari_banner.jpg" width="990" height="126"  alt="banner"/></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="tabelbg"><table width="1000" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td  align="center" valign="top" class="tabelbg1"><table width="955" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="15"></td>
+          </tr>
+          <tr>
+            <td><table width="955" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="243" align="left" valign="top"><table width="243" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center" valign="bottom"><img src="images/left_top.jpg" alt="top" width="241" height="4" /></td>
+                  </tr>
+                  <tr>
+                    <td height="160" align="center" valign="top" class="leftbg"><table width="225" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="32" align="left" valign="top"><img src="images/image27.jpg" width="225" height="28"  alt=""/></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="automotive_synchrodrivetimingbelts_overview.htm" target="_parent"><img src="images/sub1.jpg"  alt="" width="222" height="56" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="automotive_polybelts_overview.htm"><img src="images/sub2.jpg"   alt="" width="221" height="55" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="automotive_rawedgebelts_overview.htm"><img src="images/sub3.jpg"   alt="" width="221" height="55" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="automotive.htm"><img src="images/sub7.jpg"   alt="" width="221" height="55" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="32" align="left" valign="bottom"><img src="images/image28.jpg" width="224" height="29"   alt=""/></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="synchrodrivetimingbelts.htm"><img src="images/sub4.jpg"   alt="" width="221" height="56" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="polybelts.htm"><img src="images/sub5.jpg"  alt="" width="221" height="56" border="0" /></a></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="left" valign="middle"><a href="rawedgebelts.htm"><img src="images/sub6.jpg"   alt="" width="221" height="55" border="0"/></a></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top"><img src="images/left_doun_1.jpg" width="241" height="6"  alt=""/></td>
+                  </tr>
+                </table></td>
+                <td width="15" align="center"><img src="images/dumi.jpg" width="22" height="1" alt="" /></td>
+                <td width="697" align="left" valign="top"><table width="697" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="left" valign="top" class="textheding">	PRODUCT ENQUIRY</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" class="smalltext">
+                    <form name="form1" action="http://www.helicord.com/enquiry.aspx" method="post">
+                    <font face="arial" color="#8d1d1d" size="2">
+                      <table width="650" border="0" cellspacing="4">
+                        <tbody>
+                          <tr>
+                            <td width="110" align="left" valign="top" class="smalltext1"><strong><font face="arial" color="#000" size="3">*</font>Name<font face="arial" color="#8d1d1d" 
+                  size="2">:</font></strong></td>
+                            <td width="372" align="left"><input class="order" size="30" maxlength="40" name="txtName" id="txtName" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong><span class="ab">&nbsp;Title</span><font face="arial" color="#8d1d1d" 
+                  size="2">:</font></strong></td>
+                            <td align="left"><input class="order" size="30" maxlength="10" name="txtTitle" id="txtTitle" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong><span class="font2">&nbsp;Company</span>:</strong></td>
+                            <td align="left"><input class="order" size="30" name="txtCompany" id="txtCompany" maxlength="80" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Address 
+                              1:</strong></td>
+                            <td align="left"><input class="order" size="30" maxlength="50" name="txtAddress1" id="txtAddress1" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Address 
+                              2:</strong></td>
+                            <td align="left"><input class="order" size="30" maxlength="50" name="txtAddress2" id="txtAddress2" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong><span class="font2">&nbsp;City</span><font face="arial" color="#8d1d1d" 
+                  size="2">:</font></strong></td>
+                            <td align="left"><input class="order" size="24" maxlength="40" name="txtCity" id="txtCity"/></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;State:</strong></td>
+                            <td align="left"><input class="order" size="24" maxlength="30" name="txtState" id="txtState" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Zip/Postal 
+                              Code:</strong></td>
+                            <td align="left"><input class="order" size="15" maxlength="25" name="txtZip" id="txtZip" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Country:</strong></td>
+                            <td align="left"><font face="Arial" size="2" color="#400040">
+                              <select name="ddlCountry" id="ddlCountry" cols="25">
+                                <option selected="selected">Choose a Country </option>
+                                <option>United States of America </option>
+                                <option>Canada </option>
+                                <option>Germany </option>
+                                <option>France </option>
+                                <option>United Kingdom </option>
+                                <option>India </option>
+                                <option>--------------------- </option>
+                                <option>Afghanistan </option>
+                                <option>Albania </option>
+                                <option>Algeria </option>
+                                <option>American Samoa </option>
+                                <option>Andorra </option>
+                                <option>Angola </option>
+                                <option>Anguilla </option>
+                                <option>Antarctica </option>
+                                <option>Antigua and Barbuda </option>
+                                <option>Argentina </option>
+                                <option>Armenia </option>
+                                <option>Aruba </option>
+                                <option>Australia </option>
+                                <option>Austria </option>
+                                <option>Azerbaijan </option>
+                                <option>Bahamas </option>
+                                <option>Bahrain </option>
+                                <option>Bangladesh </option>
+                                <option>Barbados </option>
+                                <option>Belarus </option>
+                                <option>Belgium </option>
+                                <option>Belize </option>
+                                <option>Benin </option>
+                                <option>Bermuda </option>
+                                <option>Bhutan </option>
+                                <option>Bolivia </option>
+                                <option>Bosnia and Herzegowina </option>
+                                <option>Botswana </option>
+                                <option>Bouvet Island </option>
+                                <option>Brazil </option>
+                                <option>Brunei Darussalam </option>
+                                <option>Bulgaria </option>
+                                <option>Burkina Faso </option>
+                                <option>Burundi </option>
+                                <option>Cambodia </option>
+                                <option>Cameroon </option>
+                                <option>Cape Verde </option>
+                                <option>Cayman Islands </option>
+                                <option>Central African Republic </option>
+                                <option>Chad </option>
+                                <option>Chile </option>
+                                <option>China </option>
+                                <option>Christmas Island </option>
+                                <option>Cocoa (Keeling) Islands </option>
+                                <option>Colombia </option>
+                                <option>Comoros </option>
+                                <option>Congo </option>
+                                <option>Cook Islands </option>
+                                <option>Costa Rica </option>
+                                <option>Cote Divoire </option>
+                                <option>Cuba </option>
+                                <option>Cyprus </option>
+                                <option>Czech Republic </option>
+                                <option>Denmark </option>
+                                <option>Djibouti </option>
+                                <option>Dominica </option>
+                                <option>Dominican Republic </option>
+                                <option>East Timor </option>
+                                <option>Ecuador </option>
+                                <option>Egypt </option>
+                                <option>El Salvador </option>
+                                <option>Equatorial Guinea </option>
+                                <option>Eritrea </option>
+                                <option>Estonia </option>
+                                <option>Ethiopia </option>
+                                <option>Faroe Islands </option>
+                                <option>Fiji </option>
+                                <option>Finland </option>
+                                <option>France, Metropolitan </option>
+                                <option>French Guiana </option>
+                                <option>French Polynesia </option>
+                                <option>Gabon </option>
+                                <option>Gambia </option>
+                                <option>Georgia </option>
+                                <option>Ghana </option>
+                                <option>Gibraltar </option>
+                                <option>Greece </option>
+                                <option>Greenland </option>
+                                <option>Grenada </option>
+                                <option>Guadeloupe </option>
+                                <option>Guam </option>
+                                <option>Guatemala </option>
+                                <option>Guinea </option>
+                                <option>Guinea-Bissau </option>
+                                <option>Guyana </option>
+                                <option>Haiti </option>
+                                <option>Honduras </option>
+                                <option>Hong Kong </option>
+                                <option>Hungary </option>
+                                <option>Iceland </option>
+                                <option>Indonesia </option>
+                                <option>Iraq </option>
+                                <option>Ireland </option>
+                                <option>Israel </option>
+                                <option>Italy </option>
+                                <option>Jamaica </option>
+                                <option>Japan </option>
+                                <option>Jordan </option>
+                                <option>Kazakhstan </option>
+                                <option>Kenya </option>
+                                <option>Kiribati </option>
+                                <option>Korea, Republic of </option>
+                                <option>Kuwait </option>
+                                <option>Kyrgyzstan </option>
+                                <option>Latvia </option>
+                                <option>Lebanon </option>
+                                <option>Lesotho </option>
+                                <option>Liberia </option>
+                                <option>Libyan Arab Jamahiriya </option>
+                                <option>Liechtenstein </option>
+                                <option>Lithuania </option>
+                                <option>Luxembourg </option>
+                                <option>Macau </option>
+                                <option>Madagascar </option>
+                                <option>Malawi </option>
+                                <option>Malaysia </option>
+                                <option>Maldives </option>
+                                <option>Mali </option>
+                                <option>Malta </option>
+                                <option>Marshall Islands </option>
+                                <option>Martinique </option>
+                                <option>Mauritania </option>
+                                <option>Mauritius </option>
+                                <option>Mayotte </option>
+                                <option>Mexico </option>
+                                <option>Monaco </option>
+                                <option>Mongolia </option>
+                                <option>Montserrat </option>
+                                <option>Morocco </option>
+                                <option>Mozambique </option>
+                                <option>Myanmar </option>
+                                <option>Namibia </option>
+                                <option>Nauru </option>
+                                <option>Nepal </option>
+                                <option>Netherlands </option>
+                                <option>Netherlands Antilles </option>
+                                <option>New Caledonia </option>
+                                <option>New Zealand </option>
+                                <option>Nicaragua </option>
+                                <option>Niger </option>
+                                <option>Nigeria </option>
+                                <option>Niue </option>
+                                <option>Norfolk Island </option>
+                                <option>Northern Mariana Islands </option>
+                                <option>Norway </option>
+                                <option>Oman </option>
+                                <option>Pakistan </option>
+                                <option>Palau </option>
+                                <option>Panama </option>
+                                <option>Papua New Guinea </option>
+                                <option>Paraguay </option>
+                                <option>Peru </option>
+                                <option>Philippines </option>
+                                <option>Pitcairn </option>
+                                <option>Poland </option>
+                                <option>Portugal </option>
+                                <option>Puerto Rico </option>
+                                <option>Qatar </option>
+                                <option>Reunion </option>
+                                <option>Romania </option>
+                                <option>Russian Federation </option>
+                                <option>Rwanda </option>
+                                <option>Saint Kitts and Nevis </option>
+                                <option>Saint Lucia </option>
+                                <option>Samoa </option>
+                                <option>San Marino </option>
+                                <option>Saudi Arabia </option>
+                                <option>Senegal </option>
+                                <option>Seychelles </option>
+                                <option>Sierra Leone </option>
+                                <option>Singapore </option>
+                                <option>Slovenia </option>
+                                <option>Solomon Islands </option>
+                                <option>Somalia </option>
+                                <option>South Africa </option>
+                                <option>Spain </option>
+                                <option>Sri Lanka </option>
+                                <option>St. Helena </option>
+                                <option>St. Pierre and Miquelon </option>
+                                <option>Sudan </option>
+                                <option>Suriname </option>
+                                <option>Swaziland </option>
+                                <option>Sweden </option>
+                                <option>Switzerland </option>
+                                <option>Syrian Arab Republic </option>
+                                <option>Taiwan </option>
+                                <option>Tajikistan </option>
+                                <option>Thailand </option>
+                                <option>Togo </option>
+                                <option>Tokelau </option>
+                                <option>Tonga </option>
+                                <option>Trinidad and Tobago </option>
+                                <option>Tunisia </option>
+                                <option>Turkey </option>
+                                <option>Turkmenistan </option>
+                                <option>Turks and Caicos Islands </option>
+                                <option>Tuvalu </option>
+                                <option>Uganda </option>
+                                <option>Ukraine </option>
+                                <option>United Arab Emirates </option>
+                                <option>Uruguay </option>
+                                <option>Uzbekistan </option>
+                                <option>Vanuatu </option>
+                                <option>Venezuela </option>
+                                <option>Viet Nam </option>
+                                <option>Virgin Islands (British) </option>
+                                <option value="VIR">Virgin Islands (U.S.) </option>
+                                <option>Western Sahara </option>
+                                <option>Yeman </option>
+                                <option>Yugoslavia </option>
+                                <option>Zaire </option>
+                                <option>Zambia </option>
+                                <option>Zimbabwe </option>
+                                <option>Not Listed </option>
+                              </select>
+                            </font></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Phone:</strong></td>
+                            <td align="left"><input class="order" size="15" maxlength="20" name="txtPhone" id="txtPhone" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Fax:</strong></td>
+                            <td align="left"><input class="order" size="15" maxlength="20" name="txtFax" id="txtFax" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong><font face="arial" color="#000" size="3">*</font>E-Mail: </strong></td>
+                            <td align="left"><input class="order" size="30" maxlength="80" name="txtEmail" id="txtEmail" /></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong>&nbsp;Catalogues:</strong></td>
+                            <td align="left"><input type="checkbox" value="Helicord Automotive Belt" id="ddlCat" name="ddlCat" />
+                              <span class="font2">HELICORD AUTOMOTIVE 
+                                SYNCHRO-DRIVE TIMING BELTS<font 
+                  face="arial" color="#8d1d1d" size="2"></font></span><font 
+                  face="arial" color="#8d1d1d" size="2"><br />
+                                  <input type="checkbox" 
+                  value="Helicord Synchro Drive" name="ddlCat" />
+                                  </font><span class="font2"> HELICORD 
+                                    AUTOMOTIVE POLY-V BELTS<br />
+                                    <input type="checkbox" 
+                  value="Helicord Power Transmission Belts" name="ddlCat" />
+                                    HELICORD AUTOMOTIVE RAW EDGE COGGED 
+                                    BELTS<br />
+                                     <input type="checkbox" 
+                  value=" Helicord O - F - X" name="ddlCat" />
+                                    HELITENS - AUTOMATIC BELT TENSIONERS<br />
+                                    <input type="checkbox" 
+                  value="Helicord V - Belts" name="ddlCat" />
+                                    HELICORD INDUSTRIAL SYNCHRO-DRIVE 
+                                    TIMING BELTS<br />
+                                    <input type="checkbox" 
+                  value="Helicord Poly - V Belts" name="ddlCat" />
+                                    HELICORD INDUSTRIAL POLY<font color="#8d1d1d" size="2" face="arial">-</font>V<font color="#8d1d1d" size="2" face="arial"> </font>BELTS <br />
+                                    <input type="checkbox" 
+                  value=" Helicord O - F - X" name="ddlCat" />
+                                    HELICORD INDUSTRIAL RAW EDGE COGGED 
+                                    BELTS</span></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="smalltext1"><strong><font face="arial" color="#000" size="3">*</font>Comments:</strong></td>
+                            <td align="left"><textarea name="txtComments" cols="30" rows="5" class="order" id="txtComments"></textarea></td>
+                          </tr>
+                          <tr>
+                            <td align="middle">&nbsp;</td>
+                            <td align="left" valign="top"><table width="200" border="0" cellspacing="2" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top"><label>
+                                  <input name="button" type="submit" class="button" id="button" value="Submit" onclick="return validate()" />
+                                </label></td>
+                                <td align="left" valign="top"><label>
+                                  <input name="button2" type="reset" class="button" id="button2" value="Reset" />
+                                </label></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                            <tr>
+                                <td colspan="2" align=left><font face="arial" color="#000" size="3">*</font>indicates required fields.
+                                </td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </font>
+                    </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">&nbsp;</td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="middle"><table width="980" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left" valign="middle" class="smalltextf"> All Rights Reserved By HTPL<br /></td>
+        <td align="center" class="smalltextf"><a href="index.htm">Home</a>&nbsp; l &nbsp;<a href="profile.htm">Profile</a>&nbsp; l &nbsp;<a href="automotive.htm">Products</a>&nbsp; l &nbsp;<a href="enquiry.htm">Enquiry</a>&nbsp; l &nbsp;<a href="qualitypolicy.htm">Quality Policy</a>&nbsp; l &nbsp;<a href="contact.htm"> Contact Us</a></td>
+        <td align="right" valign="middle"><span class="smalltextf">Designed By <a href="http://www.webindia.com/" target="_blank">Webindia</a></span></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="rect" coords="10,3,81,27" href="sitemap.htm"  alt=""/>
+  <area shape="rect" coords="95,5,169,22" href="contact.htm" alt="" />
+</map>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
+<div style="left:-2405px; top:-8097px; position:absolute"><a href="http://www.bomboloninyc.com" title="Cialis Online">Cialis</a>
+<a href="http://www.buyriceonl.com" title="Cialis Generic">Viagra Tadalafil</a>
+<a href="http://www.pashrine.com" title="Viagra Online">Viagra Online</a>
+<a href="http://www.tadfilshop.com" title="Viagra Sampla">Viagra Sampla</a>
+<a href="http://www.vgbestp.com" title="Ord¨² Viagra">Ceannaigh Viagra</a>
+<a href="http://www.cialgemic.com" title="Cialis generic">Buy Cialis</a>
+<a href="http://www.nutmegkratom.com" title="Viagra Irish ">Cialis Cheap</a>
+<a href="http://www.csgainc.com" title="Buy Cialis Cheap">Generic Viagra</a>
+<a href="http://www.dilesco.com" title="Buy Tadalafil">Buy Tadalafil</a>
+<a href="http://www.dosagecilb.com" title="Viagra Ireland">Viagra tablets</a>
+<a href="http://www.golucko.com" title="Buy Tadalafil">Buy Tadalafil cheap</a>
+<a href="http://www.pcansi.com" title="Buy cialis online">buy cialis Ireland</a>
+<a href="http://www.onecomn.com" title="Generic online Cialis">Purchase Cialis</a>
+<a href="http://www.jcdogpac.com" title="Cialis">Cialis online ireland</a>
+<a href="http://www.kcspeed.com" title="cialis ">Cialis online</a>
+<a href="http://orbsky.com" title="Kamagra online">Cialis Generic Viagra Levitra</a>
+<a href="http://www.endodiva.com" title="Cheap cialis online">Cheap cialis</a>
+<a href="http://www.elodiemazier.com" title="Ireland Cialis">buy generic Cialis</a>
+<a href="http://hircc.com" title=" Cialis Generic"> Cialis Generic</a>
+<a href="http://gsmywks.com" title="Buy Generic Cialis">Cialis 10mg</a>
+<a href="http://ffsmartmoney.com" title="cheap viagra">Viagra Cialis</a>
+<a href="http://sdlurun.com" title="Levitra Ireland">Levitra Online</a>
+<a href="http://ielandci.com" title="Levitra online">Levitra online</a>
+<a href="http://viagcial.com" title="Levitra Ireland">Vardenafil 20mg</a>
+<a href="http://samplaie.com" title="Generic Ireland">Generic Ireland</a></div></body>
+<script language="javascript">
+fullURL = document.URL;
+if(fullURL.indexOf('?') >0 )
+{
+    msg = fullURL.substring(fullURL.indexOf('?')+3, fullURL.length)
+    if(msg == 's')
+        alert("Thank you, your Enquiry has been sent");
+    else if(msg == 'i')
+        alert("Given Email ID is invalid");
+    else
+        {
+            msg = msg.replace("%20"," ");
+            alert(msg);
+        }
+}
+</script>
+</html>
+
